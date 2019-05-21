@@ -5,12 +5,13 @@ var client = new Discord.Client();
 client.on('ready', () => {
   console.log(Welcome Bro ${client.user.tag}!);
 });
-var prefix = 'F!'
+var prefix = 'm!'
+
 client.on('message', message => {
   if (!message.content.startsWith(prefix)) return;
   var args = message.content.split(' ').slice(1);
   var argresult = args.join(' ');
-  if (message.author.id !== "285760610010923008") return;
+  if (message.author.id !== "533944821228896257") return;
 
 
   if (message.content.startsWith(prefix + 'wt')) {
